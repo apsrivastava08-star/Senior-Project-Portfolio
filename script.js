@@ -1,32 +1,60 @@
 // Portfolio Functionality
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Tab Switching Logic
+    // 1. Tab Switching Logic (Keep for Portfolio section if still used)
     const tabBtns = document.querySelectorAll('.tab-btn');
     const tabContents = document.querySelectorAll('.tab-content');
 
     tabBtns.forEach(btn => {
         btn.addEventListener('click', () => {
             const targetTab = btn.getAttribute('data-tab');
-
-            // Update button states
             tabBtns.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
-
-            // Update content visibility
             tabContents.forEach(content => {
-                if (content.id === targetTab) {
-                    content.classList.add('active');
-                } else {
-                    content.classList.remove('active');
-                }
+                content.classList.toggle('active', content.id === targetTab);
             });
-
-            // Re-run intersection observer check for newly visible elements
             checkVisibleElements();
         });
     });
 
-    // 2. Intersection Observer for scroll animations
+    // 2. Mobile Menu Toggle
+    const mobileToggle = document.querySelector('.mobile-menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', () => {
+            mobileToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // 3. Mobile Dropdown Toggles
+    const dropdowns = document.querySelectorAll('.dropdown');
+    dropdowns.forEach(dropdown => {
+        const trigger = dropdown.querySelector('.dropdown-trigger');
+        trigger.addEventListener('click', (e) => {
+            if (window.innerWidth <= 1100) {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+
+                // Close other dropdowns
+                dropdowns.forEach(other => {
+                    if (other !== dropdown) other.classList.remove('active');
+                });
+            }
+        });
+    });
+
+    // Close mobile menu on link click
+    const allLinks = document.querySelectorAll('.nav-links a:not(.dropdown-trigger)');
+    allLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileToggle.classList.remove('active');
+            navLinks.classList.remove('active');
+            dropdowns.forEach(d => d.classList.remove('active'));
+        });
+    });
+
+    // 4. Intersection Observer for scroll animations
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     const observerOptions = {
