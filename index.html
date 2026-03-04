@@ -1,102 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Professional Research Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Akaash Srivastava | Chemical Lab Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        "background-light": "#F2F2F2",
+                        "background-dark": "#0D0D0D",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        <h1>Professional Research Portfolio</h1>
-        <h2>Senior Internship at Jain Chem Ltd.</h2>
-        <div class="header-info">Your Name | School | Mentor | Dates</div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="beginning.html">The Beginning</a></li>
-            <li><a href="entering-lab.html">Entering the Lab</a></li>
-            <li><a href="growth.html">Growth in Action</a></li>
-            <li><a href="contribution.html">Contribution & Impact</a></li>
-            <li><a href="research.html">Research & Professional Development</a></li>
-            <li><a href="documentation.html">Documentation of Learning</a></li>
-            <li><a href="final-reflection.html">Final Reflection</a></li>
-        </ul>
+<body class="bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-300">
+    <nav class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase">
+        <div class="col-span-3 font-bold">
+            Akaash Srivastava
+        </div>
+        <div
+            class="col-span-6 flex justify-center space-x-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
+            <a class="text-black dark:text-white hover:opacity-70 transition-opacity" href="index.html">Home</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="beginning.html">Foundation</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="entering-lab.html">Learning</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="growth.html">Development</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="contribution.html">Contribution</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="research.html">Research</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="documentation.html">Evidence</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="final-reflection.html">Reflection</a>
+        </div>
+        <div class="col-span-3">
+        </div>
     </nav>
-
-    <main>
-        <h1>Home</h1>
-        <div class="subtitle">Professional Research Portfolio</div>
-
-        <section>
-            <h2>Welcome and Internship Overview</h2>
-            <div class="text-placeholder">
-                <p>[Brief introduction]</p>
+    <main class="pt-48 px-8 min-h-screen">
+        <div class="grid grid-cols-12 gap-4 mb-32">
+            <div class="col-span-12 lg:col-span-5">
+                <h1 class="text-7xl lg:text-8xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white">
+                    Science<br />Before<br />Discovery.
+                </h1>
             </div>
-            <div class="text-placeholder">
-                <p>[Internship location: Jain Chem Ltd.]</p>
+            <div class="col-span-12 lg:col-span-6 lg:col-start-7 pt-4 lg:pt-2">
+                <p
+                    class="text-2xl lg:text-[32px] font-normal leading-[1.2] tracking-tight text-neutral-800 dark:text-neutral-200">
+                    We synthesize insight through experimentation — a rigorous dialogue between theory and practice,
+                    where data is not just recorded, but understood.
+                </p>
             </div>
-            <div class="text-placeholder">
-                <p>[Role]</p>
+        </div>
+        <div class="flex justify-between items-end mb-4 text-[13px] uppercase tracking-tight">
+            <div class="text-neutral-400">(025)</div>
+            <div class="flex space-x-6">
+                <span class="font-medium">Synthesis Lab</span>
+                <span class="text-neutral-400">Chemical Engineering, Molecular Dynamics</span>
             </div>
-            <div class="text-placeholder">
-                <p>[Purpose of portfolio]</p>
+        </div>
+        <div class="relative w-full aspect-[21/9] overflow-hidden bg-neutral-200 dark:bg-neutral-800">
+            <img alt="Cinematic abstract view of a chemical reaction with microscopic crystalline structures and vibrant color gradients"
+                class="w-full h-full object-cover grayscale-[20%] contrast-[110%] brightness-[0.9]"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5aGRENC_0PKQFNM6OtvgaHUEfkAANoiKmUS9Elg6njyLweTT8eQ6eZtuyncrbPSqRZUt0mF1b1Y8O6uvtOlse1nFEkN4_nrt4Bn-7Z8yMXc6XUR5U8zgf-TKR9ckAi96n1VUeNDV1grWXnrzM0YYKZPOzbIrVT3SjDHithg2iLE3uD_lnVlY5vFoPebzkpMZ4BXGyGex-pJpLg6RNLn7UdvPykfnM_MBv_XybXdIiOk7LcnADUGDmQPTV_aqDInnlSXJdKoUlwQ" />
+            <div class="absolute inset-0 p-6 flex flex-col justify-end text-white text-[13px] uppercase tracking-tight">
+                <div class="flex justify-between items-center">
+                    <div class="font-medium">
+                        Lab City 11:24 AM
+                    </div>
+                    <a class="flex items-center gap-2 group hover:opacity-70 transition-opacity" href="#">
+                        See More
+                        <svg class="group-hover:translate-x-1 transition-transform" fill="none" height="14"
+                            viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" stroke-width="2"></path>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </section>
-
-        <section>
-            <h2>Purpose of This Portfolio</h2>
-            <div class="text-placeholder">
-                <p>This portfolio is organized chronologically to demonstrate growth over the course of the senior
-                    internship at Jain Chem Ltd. It includes comprehensive documentation, professional reflections,
-                    industry research, and final evaluations.</p>
+        </div>
+        <footer class="py-24 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
+            <div class="col-span-12 lg:col-span-4">
+                <p class="text-[13px] text-neutral-500 uppercase">© 2024 Akaash Srivastava Lab Portfolio</p>
             </div>
-        </section>
-
-        <section>
-            <h2>How to Navigate This Site</h2>
-            <div class="text-placeholder">
-                <p>The navigation menu above follows the progression of the internship from the initial planning stages
-                    to the final conclusions and reflections. Each page contains specific evidence and reflections
-                    corresponding to that phase of development.</p>
+            <div class="col-span-12 lg:col-span-4 text-[13px] uppercase">
+                <p class="mb-4">Focused on the intersection of chemical synthesis and data visualization.</p>
             </div>
-        </section>
-
-        <section>
-            <h2>Reflective Introduction (Required)</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Reflective Introduction – Internship</span>
-                (Document Placeholder)
+            <div class="col-span-12 lg:col-span-4 text-right">
+                <button
+                    class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
+                    onclick="document.documentElement.classList.toggle('dark')">
+                    Toggle Mode
+                </button>
             </div>
-        </section>
-
-        <section>
-            <h2>Proposal and Pre-Project Evidence (Required)</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Accepted Proposal</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Evidence of Securing Internship</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Classwork Completed in Preparation</span>
-                (Document Placeholder)
-            </div>
-        </section>
+        </footer>
     </main>
 
-    <footer>
-        Professional Research Portfolio &bull; Akaash &bull; Senior Internship &bull; Jain Chem Ltd.
-    </footer>
 </body>
 
 </html>

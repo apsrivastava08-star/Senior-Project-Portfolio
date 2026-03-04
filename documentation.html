@@ -1,98 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation | Professional Research Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Evidence | Akaash Srivastava</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        "background-light": "#F2F2F2",
+                        "background-dark": "#0D0D0D",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        <h1>Professional Research Portfolio</h1>
-        <h2>Senior Internship at Jain Chem Ltd.</h2>
-        <div class="header-info">Your Name | School | Mentor | Dates</div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="beginning.html">The Beginning</a></li>
-            <li><a href="entering-lab.html">Entering the Lab</a></li>
-            <li><a href="growth.html">Growth in Action</a></li>
-            <li><a href="contribution.html">Contribution & Impact</a></li>
-            <li><a href="research.html">Research & Professional Development</a></li>
-            <li><a href="documentation.html" class="active">Documentation of Learning</a></li>
-            <li><a href="final-reflection.html">Final Reflection</a></li>
-        </ul>
+<body class="bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-300">
+    <nav class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase">
+        <div class="col-span-3 font-bold">
+            Akaash Srivastava
+        </div>
+        <div
+            class="col-span-6 flex justify-center space-x-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="index.html">Home</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="beginning.html">Foundation</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="entering-lab.html">Learning</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="growth.html">Development</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="contribution.html">Contribution</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="research.html">Research</a>
+            <a class="text-black dark:text-white hover:opacity-70 transition-opacity"
+                href="documentation.html">Evidence</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="final-reflection.html">Reflection</a>
+        </div>
+        <div class="col-span-3 text-right">
+            <span class="text-neutral-400 text-[12px] tracking-widest">(06) EVIDENCE</span>
+        </div>
     </nav>
+    <main class="pt-48 px-8 min-h-screen">
+        <div class="grid grid-cols-12 gap-8 mb-32">
+            <div class="col-span-12 lg:col-span-5">
+                <h1
+                    class="text-6xl lg:text-7xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
+                    Evidence<br />Of<br />Learning.
+                </h1>
+                <p class="text-neutral-500 uppercase text-[13px] tracking-widest mb-12">Supporting Growth & Industrial
+                    Work</p>
+            </div>
+            <div class="col-span-12 lg:col-span-6 lg:col-start-7 pt-4 lg:pt-2">
+                <div class="space-y-24">
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            06.1 Accountability</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Logs & Verification</h3>
+                        <div class="grid grid-cols-1 gap-4">
+                            <div
+                                class="flex justify-between items-center py-6 border-b border-neutral-200 dark:border-neutral-800">
+                                <span class="uppercase text-[12px] tracking-tight">Signed Time Log</span>
+                                <span
+                                    class="text-neutral-400 text-[10px] uppercase font-mono tracking-tighter">[Document
+                                    Placeholder]</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-6 border-b border-neutral-200 dark:border-neutral-800">
+                                <span class="uppercase text-[12px] tracking-tight">Shift Learning Logs</span>
+                                <span
+                                    class="text-neutral-400 text-[10px] uppercase font-mono tracking-tighter">[Chronological
+                                    entries Placeholder]</span>
+                            </div>
+                        </div>
+                    </section>
 
-    <main>
-        <h1>Documentation of Learning</h1>
-        <div class="subtitle">Evidence Supporting My Growth and Work</div>
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            06.2 Technical Output</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Laboratory Worksheets</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div
+                                class="p-6 border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between h-40">
+                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">WKS 01</span>
+                                <p class="text-sm font-medium">QC Testing Template</p>
+                                <span class="text-[9px] opacity-40 uppercase">VERIFIED</span>
+                            </div>
+                            <div
+                                class="p-6 border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between h-40">
+                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">WKS 02</span>
+                                <p class="text-sm font-medium">Chromatography Output</p>
+                                <span class="text-[9px] opacity-40 uppercase">VERIFIED</span>
+                            </div>
+                            <div
+                                class="p-6 border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between h-40">
+                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">WKS 03</span>
+                                <p class="text-sm font-medium">Lab Work Samples</p>
+                                <span class="text-[9px] opacity-40 uppercase">VERIFIED</span>
+                            </div>
+                        </div>
+                    </section>
 
-        <section>
-            <h2>Time Log (Required)</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Signed Time Log</span>
-                (Document Placeholder)
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            06.3 Visuals</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Photographic Archive</h3>
+                        <div class="grid grid-cols-2 gap-2">
+                            <div
+                                class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
+                                <span
+                                    class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Equipment
+                                    Used Placeholder</span>
+                            </div>
+                            <div
+                                class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
+                                <span
+                                    class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Chromatography
+                                    Machine Placeholder</span>
+                            </div>
+                            <div
+                                class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
+                                <span
+                                    class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Testing
+                                    Area Placeholder</span>
+                            </div>
+                            <div
+                                class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
+                                <span
+                                    class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Lab
+                                    Instruments Placeholder</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </section>
+        </div>
 
-        <section>
-            <h2>Learning Logs</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Chronological Internship Shift Logs</span>
-                (Placeholder)
+        <footer class="py-24 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
+            <div class="col-span-12 lg:col-span-4">
+                <p class="text-[13px] text-neutral-500 uppercase">© 2024 Akaash Srivastava Lab Portfolio</p>
             </div>
-        </section>
-
-        <section>
-            <h2>Lab Work Samples</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Lab Worksheets</span>
-                (Document Placeholder)
+            <div class="col-span-12 lg:col-span-4 text-[13px] uppercase">
+                <p class="mb-4">Focused on the intersection of chemical synthesis and data visualization.</p>
             </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">QC Testing Template</span>
-                (Document Placeholder)
+            <div class="col-span-12 lg:col-span-4 text-right">
+                <button
+                    class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
+                    onclick="document.documentElement.classList.toggle('dark')">
+                    Toggle Mode
+                </button>
             </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Chromatography Output Samples</span>
-                (Document Placeholder)
-            </div>
-        </section>
-
-        <section>
-            <h2>Photographic Documentation</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Equipment Used</span>
-                (Image Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Chromatography Machine</span>
-                (Image Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Testing Area</span>
-                (Image Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Lab Instruments</span>
-                (Image Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Final Photo with Mentor</span>
-                (Image Placeholder)
-            </div>
-        </section>
+        </footer>
     </main>
 
-    <footer>
-        Professional Research Portfolio &bull; Akaash &bull; Senior Internship &bull; Jain Chem Ltd.
-    </footer>
 </body>
 
 </html>

@@ -1,99 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Reflection | Professional Research Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Reflection | Akaash Srivastava</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        "background-light": "#F2F2F2",
+                        "background-dark": "#0D0D0D",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        <h1>Professional Research Portfolio</h1>
-        <h2>Senior Internship at Jain Chem Ltd.</h2>
-        <div class="header-info">Your Name | School | Mentor | Dates</div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="beginning.html">The Beginning</a></li>
-            <li><a href="entering-lab.html">Entering the Lab</a></li>
-            <li><a href="growth.html">Growth in Action</a></li>
-            <li><a href="contribution.html">Contribution & Impact</a></li>
-            <li><a href="research.html">Research & Professional Development</a></li>
-            <li><a href="documentation.html">Documentation of Learning</a></li>
-            <li><a href="final-reflection.html" class="active">Final Reflection</a></li>
-        </ul>
+<body class="bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-300">
+    <nav class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase">
+        <div class="col-span-3 font-bold">
+            Akaash Srivastava
+        </div>
+        <div
+            class="col-span-6 flex justify-center space-x-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="index.html">Home</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="beginning.html">Foundation</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="entering-lab.html">Learning</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="growth.html">Development</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="contribution.html">Contribution</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="research.html">Research</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="documentation.html">Evidence</a>
+            <a class="text-black dark:text-white hover:opacity-70 transition-opacity"
+                href="final-reflection.html">Reflection</a>
+        </div>
+        <div class="col-span-3 text-right">
+            <span class="text-neutral-400 text-[12px] tracking-widest">(07) REFLECTION</span>
+        </div>
     </nav>
+    <main class="pt-48 px-8 min-h-screen">
+        <div class="grid grid-cols-12 gap-8 mb-32">
+            <div class="col-span-12 lg:col-span-5">
+                <h1
+                    class="text-6xl lg:text-7xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
+                    Final<br />Reflection.
+                </h1>
+                <p class="text-neutral-500 uppercase text-[13px] tracking-widest mb-12">Summative Evaluation & Future
+                    Outlook</p>
+            </div>
+            <div class="col-span-12 lg:col-span-6 lg:col-start-7 pt-4 lg:pt-2">
+                <div class="space-y-24">
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            07.1 Synthesis</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Revisiting the Start</h3>
+                        <p class="text-2xl leading-snug tracking-tight mb-6">"Evaluating the transformation from a
+                            theoretical baseline to industrial proficiency."</p>
+                        <div
+                            class="p-8 border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-black/50 backdrop-blur-sm">
+                            <p class="text-neutral-500 font-mono text-sm uppercase mb-4 tracking-tighter">Comparison
+                                Placeholder</p>
+                            <p class="text-lg opacity-80 leading-relaxed">Systematic analysis of the bridge between
+                                early expectations and final professional reality.</p>
+                        </div>
+                    </section>
 
-    <main>
-        <h1>Final Reflection</h1>
-        <div class="subtitle">Evaluating My Transformation from Start to Finish</div>
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            07.2 Competencies</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-8">Growth Metrics</h3>
+                        <div class="space-y-12">
+                            <div>
+                                <h4 class="text-[11px] uppercase tracking-widest text-neutral-400 mb-4">Technical Growth
+                                </h4>
+                                <div class="grid grid-cols-1 md:grid-cols-3 gap-2">
+                                    <div class="p-4 border border-neutral-200 dark:border-neutral-800 text-[12px]">
+                                        INSTRUMENT USE</div>
+                                    <div class="p-4 border border-neutral-200 dark:border-neutral-800 text-[12px]">DATA
+                                        ANALYSIS</div>
+                                    <div class="p-4 border border-neutral-200 dark:border-neutral-800 text-[12px]">LAB
+                                        PRECISION</div>
+                                </div>
+                            </div>
+                            <div>
+                                <h4 class="text-[11px] uppercase tracking-widest text-neutral-400 mb-4">Professional
+                                    Growth</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                    <div class="p-4 border border-neutral-200 dark:border-neutral-800 text-[12px]">
+                                        COMMUNICATION & INITIATIVE</div>
+                                    <div class="p-4 border border-neutral-200 dark:border-neutral-800 text-[12px]">
+                                        INDEPENDENCE & CONFIDENCE</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
 
-        <section>
-            <h2>Revisiting My Starting Point</h2>
-            <div class="text-placeholder">
-                <p>Comparison of beginning to end: [Placeholder]</p>
-            </div>
-        </section>
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            07.3 Outlook</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Future Applications</h3>
+                        <div class="p-8 bg-black text-white dark:bg-white dark:text-black">
+                            <p class="text-[11px] uppercase tracking-[0.2em] mb-4 opacity-60">Career & Academic
+                                Connection</p>
+                            <p class="text-xl leading-relaxed font-light">[Connecting internship to academic and career
+                                goals Placeholder]</p>
+                        </div>
+                    </section>
 
-        <section>
-            <h2>Technical Growth</h2>
-            <div class="text-placeholder">
-                <p>Instrument use: [Placeholder]</p>
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            07.4 Acknowledgements</h2>
+                        <div class="p-8 border border-neutral-200 dark:border-neutral-800">
+                            <p class="text-sm opacity-70 italic font-mono">[Thank you to mentor, company, and graders
+                                Placeholder]</p>
+                        </div>
+                    </section>
+                </div>
             </div>
-            <div class="text-placeholder">
-                <p>Data analysis: [Placeholder]</p>
-            </div>
-            <div class="text-placeholder">
-                <p>Lab precision: [Placeholder]</p>
-            </div>
-        </section>
+        </div>
 
-        <section>
-            <h2>Professional Growth</h2>
-            <div class="text-placeholder">
-                <p>Communication: [Placeholder]</p>
+        <footer class="py-24 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
+            <div class="col-span-12 lg:col-span-4">
+                <p class="text-[13px] text-neutral-500 uppercase">© 2024 Akaash Srivastava Lab Portfolio</p>
             </div>
-            <div class="text-placeholder">
-                <p>Initiative: [Placeholder]</p>
+            <div class="col-span-12 lg:col-span-4 text-[13px] uppercase">
+                <p class="mb-4">Focused on the intersection of chemical synthesis and data visualization.</p>
             </div>
-            <div class="text-placeholder">
-                <p>Independence: [Placeholder]</p>
+            <div class="col-span-12 lg:col-span-4 text-right">
+                <button
+                    class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
+                    onclick="document.documentElement.classList.toggle('dark')">
+                    Toggle Mode
+                </button>
             </div>
-            <div class="text-placeholder">
-                <p>Confidence: [Placeholder]</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>SMART Goal Evaluation</h2>
-            <div class="text-placeholder">
-                <p>Was the goal achieved? [Placeholder]</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Lessons Learned and Future Applications</h2>
-            <div class="text-placeholder">
-                <p>Connecting internship to academic and career goals: [Placeholder]</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Acknowledgements</h2>
-            <div class="text-placeholder">
-                <p>Thank you to mentor, company, and graders: [Placeholder]</p>
-            </div>
-        </section>
+        </footer>
     </main>
 
-    <footer>
-        Professional Research Portfolio &bull; Akaash &bull; Senior Internship &bull; Jain Chem Ltd.
-    </footer>
 </body>
 
 </html>

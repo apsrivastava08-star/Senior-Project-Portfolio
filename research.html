@@ -1,101 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research & PD | Professional Research Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Research | Akaash Srivastava</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        "background-light": "#F2F2F2",
+                        "background-dark": "#0D0D0D",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        <h1>Professional Research Portfolio</h1>
-        <h2>Senior Internship at Jain Chem Ltd.</h2>
-        <div class="header-info">Your Name | School | Mentor | Dates</div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="beginning.html">The Beginning</a></li>
-            <li><a href="entering-lab.html">Entering the Lab</a></li>
-            <li><a href="growth.html">Growth in Action</a></li>
-            <li><a href="contribution.html">Contribution & Impact</a></li>
-            <li><a href="research.html" class="active">Research & Professional Development</a></li>
-            <li><a href="documentation.html">Documentation of Learning</a></li>
-            <li><a href="final-reflection.html">Final Reflection</a></li>
-        </ul>
+<body class="bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-300">
+    <nav class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase">
+        <div class="col-span-3 font-bold">
+            Akaash Srivastava
+        </div>
+        <div
+            class="col-span-6 flex justify-center space-x-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="index.html">Home</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="beginning.html">Foundation</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="entering-lab.html">Learning</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="growth.html">Development</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="contribution.html">Contribution</a>
+            <a class="text-black dark:text-white hover:opacity-70 transition-opacity" href="research.html">Research</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="documentation.html">Evidence</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="final-reflection.html">Reflection</a>
+        </div>
+        <div class="col-span-3 text-right">
+            <span class="text-neutral-400 text-[12px] tracking-widest">(05) RESEARCH</span>
+        </div>
     </nav>
+    <main class="pt-48 px-8 min-h-screen">
+        <div class="grid grid-cols-12 gap-8 mb-32">
+            <div class="col-span-12 lg:col-span-5">
+                <h1
+                    class="text-6xl lg:text-7xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
+                    Industry<br />&<br />Research.
+                </h1>
+                <p class="text-neutral-500 uppercase text-[13px] tracking-widest mb-12">Knowledge Beyond Daily
+                    Operations</p>
+            </div>
+            <div class="col-span-12 lg:col-span-6 lg:col-start-7 pt-4 lg:pt-2">
+                <div class="space-y-24">
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            05.1 Theory</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Annotated Bibliography</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div
+                                class="p-6 border border-neutral-200 dark:border-neutral-800 bg-white/30 dark:bg-black/30">
+                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">Entry 01</span>
+                                <p class="mt-2 text-sm opacity-70">[Bibliography 1 Placeholder]</p>
+                            </div>
+                            <div
+                                class="p-6 border border-neutral-200 dark:border-neutral-800 bg-white/30 dark:bg-black/30">
+                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">Entry 02</span>
+                                <p class="mt-2 text-sm opacity-70">[Bibliography 2 Placeholder]</p>
+                            </div>
+                            <div
+                                class="p-6 border border-neutral-200 dark:border-neutral-800 bg-white/30 dark:bg-black/30">
+                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">Entry 03</span>
+                                <p class="mt-2 text-sm opacity-70">[Bibliography 3 Placeholder]</p>
+                            </div>
+                            <div
+                                class="p-6 border border-neutral-200 dark:border-neutral-800 bg-white/30 dark:bg-black/30">
+                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">Entry 04</span>
+                                <p class="mt-2 text-sm opacity-70">[Bibliography 4 Placeholder]</p>
+                            </div>
+                            <div
+                                class="p-6 border border-neutral-200 dark:border-neutral-800 bg-white/30 dark:bg-black/30">
+                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">Entry 05</span>
+                                <p class="mt-2 text-sm opacity-70">[Bibliography 5 Placeholder]</p>
+                            </div>
+                            <div
+                                class="p-6 border border-neutral-200 dark:border-neutral-800 bg-white/30 dark:bg-black/30">
+                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">Entry 06</span>
+                                <p class="mt-2 text-sm opacity-70">[Bibliography 6 Placeholder]</p>
+                            </div>
+                        </div>
+                        <div class="mt-8 p-8 border border-neutral-200 dark:border-neutral-800 italic opacity-70">
+                            <p class="text-neutral-400 text-[11px] uppercase mb-4 tracking-widest">Research Use Case</p>
+                            <p class="text-lg">[Annotated articles, notes, summaries, or outlines Placeholder]</p>
+                        </div>
+                    </section>
 
-    <main>
-        <h1>Research & Professional Development</h1>
-        <div class="subtitle">Expanding Industry Knowledge Beyond Daily Tasks</div>
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            05.2 Perspective</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Professional Interviews</h3>
+                        <div class="space-y-4">
+                            <div
+                                class="flex justify-between items-center py-6 border-b border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors px-4">
+                                <div class="flex flex-col">
+                                    <span class="uppercase text-[12px] tracking-tight font-bold">Industry Professional
+                                        01</span>
+                                    <span class="text-neutral-400 text-[10px] mt-1">LOGGED & ANALYZED</span>
+                                </div>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-6 border-b border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors px-4">
+                                <div class="flex flex-col">
+                                    <span class="uppercase text-[12px] tracking-tight font-bold">Industry Professional
+                                        02</span>
+                                    <span class="text-neutral-400 text-[10px] mt-1">LOGGED & ANALYZED</span>
+                                </div>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                            <div
+                                class="flex justify-between items-center py-6 border-b border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-900 transition-colors px-4">
+                                <div class="flex flex-col">
+                                    <span class="uppercase text-[12px] tracking-tight font-bold">Industry Professional
+                                        03</span>
+                                    <span class="text-neutral-400 text-[10px] mt-1">LOGGED & ANALYZED</span>
+                                </div>
+                                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7" />
+                                </svg>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
 
-        <section>
-            <h2>Purpose of Research</h2>
-            <div class="text-placeholder">
-                <p>[Explanation of connection between research and internship placeholder]</p>
+        <footer class="py-24 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
+            <div class="col-span-12 lg:col-span-4">
+                <p class="text-[13px] text-neutral-500 uppercase">© 2024 Akaash Srivastava Lab Portfolio</p>
             </div>
-        </section>
-
-        <section>
-            <h2>Annotated Bibliography</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Annotated Bibliography 1</span>
-                (Document Placeholder)
+            <div class="col-span-12 lg:col-span-4 text-[13px] uppercase">
+                <p class="mb-4">Focused on the intersection of chemical synthesis and data visualization.</p>
             </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Annotated Bibliography 2</span>
-                (Document Placeholder)
+            <div class="col-span-12 lg:col-span-4 text-right">
+                <button
+                    class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
+                    onclick="document.documentElement.classList.toggle('dark')">
+                    Toggle Mode
+                </button>
             </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Annotated Bibliography 3</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Annotated Bibliography 4</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Annotated Bibliography 5</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Annotated Bibliography 6</span>
-                (Document Placeholder)
-            </div>
-        </section>
-
-        <section>
-            <h2>Required Interviews (Non-Mentor, Age 25+)</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Professional Interview 1</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Professional Interview 2</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Professional Interview 3</span>
-                (Document Placeholder)
-            </div>
-        </section>
-
-        <section>
-            <h2>Evidence of Research Use</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Annotated articles, notes, summaries, or outlines</span>
-                (Placeholder)
-            </div>
-        </section>
+        </footer>
     </main>
 
-    <footer>
-        Professional Research Portfolio &bull; Akaash &bull; Senior Internship &bull; Jain Chem Ltd.
-    </footer>
 </body>
 
 </html>

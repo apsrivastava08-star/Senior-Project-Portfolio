@@ -1,103 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contribution & Impact | Professional Research Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contribution | Akaash Srivastava</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        "background-light": "#F2F2F2",
+                        "background-dark": "#0D0D0D",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        <h1>Professional Research Portfolio</h1>
-        <h2>Senior Internship at Jain Chem Ltd.</h2>
-        <div class="header-info">Your Name | School | Mentor | Dates</div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="beginning.html">The Beginning</a></li>
-            <li><a href="entering-lab.html">Entering the Lab</a></li>
-            <li><a href="growth.html">Growth in Action</a></li>
-            <li><a href="contribution.html" class="active">Contribution & Impact</a></li>
-            <li><a href="research.html">Research & Professional Development</a></li>
-            <li><a href="documentation.html">Documentation of Learning</a></li>
-            <li><a href="final-reflection.html">Final Reflection</a></li>
-        </ul>
+<body class="bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-300">
+    <nav class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase">
+        <div class="col-span-3 font-bold">
+            Akaash Srivastava
+        </div>
+        <div
+            class="col-span-6 flex justify-center space-x-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="index.html">Home</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="beginning.html">Foundation</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="entering-lab.html">Learning</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="growth.html">Development</a>
+            <a class="text-black dark:text-white hover:opacity-70 transition-opacity"
+                href="contribution.html">Contribution</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="research.html">Research</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="documentation.html">Evidence</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="final-reflection.html">Reflection</a>
+        </div>
+        <div class="col-span-3 text-right">
+            <span class="text-neutral-400 text-[12px] tracking-widest">(04) CONTRIBUTION</span>
+        </div>
     </nav>
+    <main class="pt-48 px-8 min-h-screen">
+        <div class="grid grid-cols-12 gap-8 mb-32">
+            <div class="col-span-12 lg:col-span-5">
+                <h1
+                    class="text-6xl lg:text-7xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
+                    Contribution<br />&<br />Impact.
+                </h1>
+                <p class="text-neutral-500 uppercase text-[13px] tracking-widest mb-12">Reliability & Team Productivity
+                </p>
+            </div>
+            <div class="col-span-12 lg:col-span-6 lg:col-start-7 pt-4 lg:pt-2">
+                <div class="space-y-24">
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            04.1 Technical Value</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Core Laboratory Support</h3>
+                        <div class="grid grid-cols-1 gap-4">
+                            <div
+                                class="p-8 border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-black/50 backdrop-blur-sm">
+                                <ul class="space-y-4">
+                                    <li class="flex items-start gap-4">
+                                        <span
+                                            class="text-[10px] bg-black dark:bg-white text-white dark:text-black px-2 py-0.5 mt-1">QC</span>
+                                        <p class="text-lg">Chromatography & Hydroxyl Value Analysis Support</p>
+                                    </li>
+                                    <li class="flex items-start gap-4">
+                                        <span
+                                            class="text-[10px] bg-black dark:bg-white text-white dark:text-black px-2 py-0.5 mt-1">INIT</span>
+                                        <p class="text-lg">Active Participation in Problem Solving & Lab Initiative</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
 
-    <main>
-        <h1>Contribution & Impact</h1>
-        <div class="subtitle">Becoming a Reliable and Productive Team Member</div>
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            04.2 Performance Check</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Mentor Evaluations</h3>
+                        <div class="grid grid-cols-2 md:grid-cols-5 gap-2">
+                            <div
+                                class="aspect-square border border-neutral-200 dark:border-neutral-800 flex flex-col items-center justify-center p-2 text-center">
+                                <span class="text-[10px] opacity-40 mb-2">REV 01</span>
+                                <span class="text-[9px] font-bold">VERIFIED</span>
+                            </div>
+                            <div
+                                class="aspect-square border border-neutral-200 dark:border-neutral-800 flex flex-col items-center justify-center p-2 text-center">
+                                <span class="text-[10px] opacity-40 mb-2">REV 02</span>
+                                <span class="text-[9px] font-bold">VERIFIED</span>
+                            </div>
+                            <div
+                                class="aspect-square border border-neutral-200 dark:border-neutral-800 flex flex-col items-center justify-center p-2 text-center">
+                                <span class="text-[10px] opacity-40 mb-2">REV 03</span>
+                                <span class="text-[9px] font-bold">VERIFIED</span>
+                            </div>
+                            <div
+                                class="aspect-square border border-neutral-200 dark:border-neutral-800 flex flex-col items-center justify-center p-2 text-center">
+                                <span class="text-[10px] opacity-40 mb-2">REV 04</span>
+                                <span class="text-[9px] font-bold">VERIFIED</span>
+                            </div>
+                            <div
+                                class="aspect-square border border-neutral-200 dark:border-neutral-800 flex flex-col items-center justify-center p-2 text-center">
+                                <span class="text-[10px] opacity-40 mb-2">REV 05</span>
+                                <span class="text-[9px] font-bold">VERIFIED</span>
+                            </div>
+                        </div>
+                        <div class="mt-4 p-6 border border-neutral-200 dark:border-neutral-800">
+                            <p class="text-sm opacity-70 italic font-mono">[Summary of growth based on evaluations
+                                placeholder]</p>
+                        </div>
+                    </section>
 
-        <section>
-            <h2>Technical Contributions</h2>
-            <div class="text-placeholder">
-                <p>Chromatography work: [Description placeholder]</p>
+                    <section>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            04.3 Autonomy</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-4">Evidence of Trust</h3>
+                        <div
+                            class="p-8 border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-black/50 backdrop-blur-sm">
+                            <p class="text-neutral-500 font-mono text-sm uppercase mb-4 tracking-tighter">Workflow
+                                Impact Placeholder</p>
+                            <p class="text-xl leading-relaxed">Systematic transition from observation to independent
+                                operational execution, directly impacting laboratory efficiency.</p>
+                        </div>
+                    </section>
+                </div>
             </div>
-            <div class="text-placeholder">
-                <p>Hydroxyl value analysis: [Description placeholder]</p>
-            </div>
-            <div class="text-placeholder">
-                <p>Quality control support: [Description placeholder]</p>
-            </div>
-        </section>
+        </div>
 
-        <section>
-            <h2>Problem Solving and Initiative</h2>
-            <div class="text-placeholder">
-                <p>[Description of a challenge and solution placeholder]</p>
+        <footer class="py-24 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
+            <div class="col-span-12 lg:col-span-4">
+                <p class="text-[13px] text-neutral-500 uppercase">© 2024 Akaash Srivastava Lab Portfolio</p>
             </div>
-        </section>
-
-        <section>
-            <h2>Mentor Evaluations Over Time</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Mentor Evaluation 1</span>
-                (Document Placeholder)
+            <div class="col-span-12 lg:col-span-4 text-[13px] uppercase">
+                <p class="mb-4">Focused on the intersection of chemical synthesis and data visualization.</p>
             </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Mentor Evaluation 2</span>
-                (Document Placeholder)
+            <div class="col-span-12 lg:col-span-4 text-right">
+                <button
+                    class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
+                    onclick="document.documentElement.classList.toggle('dark')">
+                    Toggle Mode
+                </button>
             </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Mentor Evaluation 3</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Mentor Evaluation 4</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Mentor Evaluation 5</span>
-                (Document Placeholder)
-            </div>
-            <div class="text-placeholder">
-                <p>[Summary of growth based on evaluations placeholder]</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Evidence of Increased Trust</h2>
-            <div class="text-placeholder">
-                <p>[Description of transition from observation to independence placeholder]</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Impact on Workflow</h2>
-            <div class="text-placeholder">
-                <p>[Description of measurable contribution placeholder]</p>
-            </div>
-        </section>
+        </footer>
     </main>
 
-    <footer>
-        Professional Research Portfolio &bull; Akaash &bull; Senior Internship &bull; Jain Chem Ltd.
-    </footer>
 </body>
 
 </html>

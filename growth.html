@@ -1,126 +1,171 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Growth in Action | Professional Research Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Development | Akaash Srivastava</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#000000",
+                        "background-light": "#F2F2F2",
+                        "background-dark": "#0D0D0D",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0px",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        <h1>Professional Research Portfolio</h1>
-        <h2>Senior Internship at Jain Chem Ltd.</h2>
-        <div class="header-info">Your Name | School | Mentor | Dates</div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="beginning.html">The Beginning</a></li>
-            <li><a href="entering-lab.html">Entering the Lab</a></li>
-            <li><a href="growth.html" class="active">Growth in Action</a></li>
-            <li><a href="contribution.html">Contribution & Impact</a></li>
-            <li><a href="research.html">Research & Professional Development</a></li>
-            <li><a href="documentation.html">Documentation of Learning</a></li>
-            <li><a href="final-reflection.html">Final Reflection</a></li>
-        </ul>
+<body class="bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-300">
+    <nav class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase">
+        <div class="col-span-3 font-bold">
+            Akaash Srivastava
+        </div>
+        <div
+            class="col-span-6 flex justify-center space-x-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="index.html">Home</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="beginning.html">Foundation</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="entering-lab.html">Learning</a>
+            <a class="text-black dark:text-white hover:opacity-70 transition-opacity" href="growth.html">Development</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="contribution.html">Contribution</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="research.html">Research</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors" href="documentation.html">Evidence</a>
+            <a class="hover:text-black dark:hover:text-white transition-colors"
+                href="final-reflection.html">Reflection</a>
+        </div>
+        <div class="col-span-3 text-right">
+            <span class="text-neutral-400 text-[12px] tracking-widest">(03) DEVELOPMENT</span>
+        </div>
     </nav>
+    <main class="pt-48 px-8 min-h-screen">
+        <div class="grid grid-cols-12 gap-8 mb-32">
+            <div class="col-span-12 lg:col-span-5">
+                <h1
+                    class="text-6xl lg:text-7xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
+                    Growth<br />In<br />Action.
+                </h1>
+                <p class="text-neutral-500 uppercase text-[13px] tracking-widest mb-12">Technical Skill & Professional
+                    Confidence</p>
+            </div>
+            <div class="col-span-12 lg:col-span-6 lg:col-start-7 pt-4 lg:pt-2">
+                <div
+                    class="space-y-32 relative before:absolute before:left-0 before:top-4 before:bottom-0 before:w-px before:bg-neutral-200 dark:before:bg-neutral-800 pl-12">
 
-    <main>
-        <h1>Growth in Action</h1>
-        <div class="subtitle">Developing Technical Skill and Professional Confidence</div>
+                    <section class="relative">
+                        <div class="absolute -left-[53px] top-4 w-2 h-2 rounded-full bg-black dark:bg-white"></div>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            OCTOBER</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-6">Technical Onboarding</h3>
+                        <div class="space-y-6">
+                            <div class="p-8 border border-neutral-200 dark:border-neutral-800">
+                                <p class="text-neutral-400 font-mono text-[10px] uppercase mb-4 tracking-widest">
+                                    Reflection & Conference</p>
+                                <p class="text-sm opacity-70 mb-4 font-mono">[Reflection Placeholder] [Conference Sheet
+                                    Placeholder]</p>
+                                <p class="text-lg leading-relaxed">Developing core lab competencies and navigating
+                                    initial technical challenges.</p>
+                            </div>
+                        </div>
+                    </section>
 
-        <section>
-            <h2>October Section</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">October Conference Sheet</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">October Reflection</span>
-                (Document Placeholder)
-            </div>
-            <div class="text-placeholder">
-                <p>Skills developed: [Placeholder]</p>
-            </div>
-            <div class="text-placeholder">
-                <p>Challenges faced: [Placeholder]</p>
-            </div>
-            <div class="text-placeholder">
-                <p>Adjustments made: [Placeholder]</p>
-            </div>
-        </section>
+                    <section class="relative">
+                        <div
+                            class="absolute -left-[53px] top-4 w-2 h-2 rounded-full bg-black dark:bg-white text-neutral-400">
+                        </div>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            NOVEMBER</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-6">Increasing Responsibility</h3>
+                        <div class="space-y-6">
+                            <div class="p-8 border border-neutral-200 dark:border-neutral-800">
+                                <p class="text-neutral-400 font-mono text-[10px] uppercase mb-4 tracking-widest">Problem
+                                    Solving</p>
+                                <p class="text-sm opacity-70 mb-4 font-mono">[Technical Improvement Placeholder]</p>
+                                <p class="text-lg leading-relaxed">Application of advanced chromatography techniques and
+                                    independent data analysis.</p>
+                            </div>
+                        </div>
+                    </section>
 
-        <section>
-            <h2>November Section</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">November Conference Sheet</span>
-                (Document Placeholder)
-            </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">November Reflection</span>
-                (Document Placeholder)
-            </div>
-            <div class="text-placeholder">
-                <p>Increased responsibility: [Placeholder]</p>
-            </div>
-            <div class="text-placeholder">
-                <p>Technical improvement: [Placeholder]</p>
-            </div>
-            <div class="text-placeholder">
-                <p>Problem-solving example: [Placeholder]</p>
-            </div>
-        </section>
+                    <section class="relative">
+                        <div class="absolute -left-[53px] top-4 w-2 h-2 rounded-full bg-black dark:bg-white"></div>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            DECEMBER</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-6">Mid-Year Integration</h3>
+                        <div class="space-y-6">
+                            <div class="p-8 border border-neutral-200 dark:border-neutral-800">
+                                <p class="text-neutral-400 font-mono text-[10px] uppercase mb-4 tracking-widest">
+                                    Independence Growth</p>
+                                <p class="text-sm opacity-70 mb-4 font-mono">[SMART Goal Adjustment Placeholder]</p>
+                                <p class="text-lg leading-relaxed">Systematic evaluation of mid-year progress and
+                                    recalibration of professional objectives.</p>
+                            </div>
+                        </div>
+                    </section>
 
-        <section>
-            <h2>December Section</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">Mid-Year Reflection</span>
-                (Document Placeholder)
+                    <section class="relative">
+                        <div class="absolute -left-[53px] top-4 w-2 h-2 rounded-full bg-black dark:bg-white"></div>
+                        <h2
+                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                            JANUARY</h2>
+                        <h3 class="text-3xl font-medium tracking-tight mb-6">Professional Maturity</h3>
+                        <div class="space-y-6">
+                            <div class="p-8 border border-neutral-200 dark:border-neutral-800">
+                                <p class="text-neutral-400 font-mono text-[10px] uppercase mb-4 tracking-widest">Final
+                                    Stage Development</p>
+                                <p class="text-sm opacity-70 mb-4 font-mono">[Confidence Level Placeholder]</p>
+                                <p class="text-lg leading-relaxed">Achieving a baseline of professional competence and
+                                    autonomy in complex lab procedures.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">December Documentation (if applicable)</span>
-                (Document Placeholder)
-            </div>
-            <div class="text-placeholder">
-                <p>Independence growth: [Placeholder]</p>
-            </div>
-            <div class="text-placeholder">
-                <p>SMART goal adjustment: [Placeholder]</p>
-            </div>
-            <div class="text-placeholder">
-                <p>Comparison to starting point: [Placeholder]</p>
-            </div>
-        </section>
+        </div>
 
-        <section>
-            <h2>January Section</h2>
-            <div class="placeholder-block">
-                <span class="placeholder-label">January Conference Sheet</span>
-                (Document Placeholder)
+        <footer class="py-24 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
+            <div class="col-span-12 lg:col-span-4">
+                <p class="text-[13px] text-neutral-500 uppercase">© 2024 Akaash Srivastava Lab Portfolio</p>
             </div>
-            <div class="placeholder-block">
-                <span class="placeholder-label">January Reflection</span>
-                (Document Placeholder)
+            <div class="col-span-12 lg:col-span-4 text-[13px] uppercase">
+                <p class="mb-4">Focused on the intersection of chemical synthesis and data visualization.</p>
             </div>
-            <div class="text-placeholder">
-                <p>Final stage development: [Placeholder]</p>
+            <div class="col-span-12 lg:col-span-4 text-right">
+                <button
+                    class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
+                    onclick="document.documentElement.classList.toggle('dark')">
+                    Toggle Mode
+                </button>
             </div>
-            <div class="text-placeholder">
-                <p>Professional maturity: [Placeholder]</p>
-            </div>
-            <div class="text-placeholder">
-                <p>Confidence level: [Placeholder]</p>
-            </div>
-        </section>
+        </footer>
     </main>
 
-    <footer>
-        Professional Research Portfolio &bull; Akaash &bull; Senior Internship &bull; Jain Chem Ltd.
-    </footer>
 </body>
 
 </html>
