@@ -11,6 +11,22 @@
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
     <script>
+        (function () {
+            const THEME_KEY = 'akaash-portfolio-theme';
+            const savedTheme = localStorage.getItem(THEME_KEY);
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+                document.documentElement.classList.add('dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+            }
+            window.toggleDarkMode = function () {
+                const isDark = document.documentElement.classList.toggle('dark');
+                localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light');
+            };
+        })();
+    </script>
+    <script>
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -135,7 +151,7 @@
             <div class="col-span-12 lg:col-span-4 text-right">
                 <button
                     class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
-                    onclick="document.documentElement.classList.toggle('dark')">
+                    onclick="window.toggleDarkMode()">
                     Toggle Mode
                 </button>
             </div>
