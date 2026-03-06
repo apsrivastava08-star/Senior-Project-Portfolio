@@ -15,10 +15,10 @@
             const THEME_KEY = 'akaash-portfolio-theme';
             const savedTheme = localStorage.getItem(THEME_KEY);
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                document.documentElement.classList.add('dark');
-            } else {
+            if (savedTheme === 'light') {
                 document.documentElement.classList.remove('dark');
+            } else {
+                document.documentElement.classList.add('dark');
             }
             window.toggleDarkMode = function () {
                 const isDark = document.documentElement.classList.toggle('dark');
@@ -82,7 +82,7 @@
     <main class="pt-36 px-8 min-h-screen">
         <div class="grid grid-cols-12 gap-y-20 gap-x-8 mb-20">
             <!-- Row 1: Header (Left) and September Journals (Right) -->
-            <div class="col-span-12 lg:col-span-5 lg:col-start-1">
+            <div class="col-span-12 lg:col-span-6 lg:col-start-1">
                 <h1
                     class="text-5xl lg:text-6xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
                     Evidence<br />Of<br />Learning

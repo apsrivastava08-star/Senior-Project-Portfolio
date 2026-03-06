@@ -15,10 +15,10 @@
             const THEME_KEY = 'akaash-portfolio-theme';
             const savedTheme = localStorage.getItem(THEME_KEY);
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
-                document.documentElement.classList.add('dark');
-            } else {
+            if (savedTheme === 'light') {
                 document.documentElement.classList.remove('dark');
+            } else {
+                document.documentElement.classList.add('dark');
             }
             window.toggleDarkMode = function () {
                 const isDark = document.documentElement.classList.toggle('dark');
@@ -99,17 +99,26 @@
         </div>
 
         <!-- Intent for Distinguished Section -->
-        <div class="grid grid-cols-12 gap-y-12 gap-x-8 mb-20 pt-16 border-t border-neutral-200 dark:border-neutral-800">
-            <div class="col-span-12 lg:col-span-5">
-                <h2 class="text-[13px] uppercase tracking-[0.2em] text-neutral-400 dark:text-neutral-500 mb-6">
-                    Recognition Submission
-                </h2>
-                <h3
-                    class="text-3xl lg:text-4xl font-medium tracking-tighter uppercase leading-[0.9] text-black dark:text-white">
-                    Intent For<br />Distinguished
-                </h3>
+        <div
+            class="grid grid-cols-12 gap-x-8 gap-y-8 mb-20 pt-16 border-t border-neutral-200 dark:border-neutral-800 items-start">
+            <!-- Left: Portrait -->
+            <div class="col-span-12 lg:col-span-4">
+                <div
+                    class="aspect-[3/4] overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-100 dark:bg-neutral-900">
+                    <img src="images/akaashphoto.jpg" alt="Akaash Srivastava" class="w-full h-full object-cover">
+                </div>
             </div>
-            <div class="col-span-12 lg:col-span-7 lg:col-start-6">
+            <!-- Right: Heading above quote -->
+            <div class="col-span-12 lg:col-span-8 flex flex-col gap-8">
+                <div>
+                    <h2 class="text-[13px] uppercase tracking-[0.2em] text-neutral-400 dark:text-neutral-500 mb-4">
+                        Recognition Submission
+                    </h2>
+                    <h3
+                        class="text-3xl lg:text-4xl font-medium tracking-tighter uppercase leading-[0.9] text-black dark:text-white">
+                        Intent For<br />Distinguished
+                    </h3>
+                </div>
                 <div class="p-8 border-l border-black dark:border-white bg-neutral-100 dark:bg-white/5">
                     <p
                         class="text-lg lg:text-xl font-medium leading-[1.6] tracking-tight italic text-neutral-800 dark:text-neutral-200">
@@ -129,7 +138,7 @@
 
 
 
-        <div class="flex justify-center mb-20">
+        <div class="flex justify-center mb-10 -mt-8">
             <div class="max-w-4xl text-center">
                 <p
                     class="text-lg lg:text-xl font-light leading-[1.6] tracking-tight text-neutral-600 dark:text-neutral-400 mb-6">
