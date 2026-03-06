@@ -57,12 +57,12 @@
 
 <body class="bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-300">
     <nav
-        class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase transition-all duration-300">
-        <div class="col-span-3 font-bold">
+        class="fixed top-0 w-full z-50 px-8 py-6 flex items-center justify-between text-[13px] tracking-tight uppercase transition-all duration-300">
+        <div class="font-bold shrink-0">
             Akaash Srivastava
         </div>
         <div
-            class="col-span-6 flex justify-center space-x-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
+            class="flex items-center gap-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
             <a class="hover:text-black dark:hover:text-white transition-colors" href="index.html">Home</a>
             <a class="text-black dark:text-white hover:opacity-70 transition-opacity"
                 href="beginning.html">Foundation</a>
@@ -75,37 +75,32 @@
             <a class="hover:text-black dark:hover:text-white transition-colors"
                 href="final-reflection.html">Reflection</a>
         </div>
-        <div class="col-span-3 text-right">
+        <div class="shrink-0 text-right">
             <span class="text-neutral-400 text-[12px] tracking-widest">(01) FOUNDATION</span>
         </div>
     </nav>
     <main class="pt-48 px-8 min-h-screen">
         <div class="grid grid-cols-12 gap-y-32 gap-x-8 mb-32">
-            <!-- Row 1: Header (Left) and 01.1 (Right) -->
+            <!-- Row 1: Header left, empty placeholder right (future image) -->
             <div class="col-span-12 lg:col-span-5 lg:col-start-1">
                 <h1
                     class="text-6xl lg:text-7xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
                     where it<br />all<br />began
                 </h1>
-                <p class="text-neutral-500 uppercase text-[13px] tracking-widest mb-12">Pre-Internship & Skill Baseline
+                <p class="text-neutral-500 uppercase text-[13px] tracking-widest mb-12">Pre-Internship &amp; Skill
+                    Baseline
                 </p>
             </div>
 
-            <!-- 01.1 Reflection - Right Aligned with Title -->
-            <section class="col-span-12 lg:col-span-6 lg:col-start-7">
-                <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
-                    01.1 Reflection</h2>
-                <h3 class="text-3xl font-medium tracking-tight mb-4">Pre-Internship Analysis</h3>
+            <!-- Right: placeholder for a future image -->
+            <div class="col-span-12 lg:col-span-6 lg:col-start-7 flex items-start">
                 <div
-                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
-                    <iframe
-                        src="https://docs.google.com/document/d/e/2PACX-1vQk1gmFdY3XK8OyyYvrFLC1nGhOdy4cNe_TtVoxgk4t08dj65xkNdSEb9W-bWc7lCnZ7T0GemIRZryY/pub?embedded=true"
-                        class="w-full h-[600px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                    class="w-full aspect-[4/3] bg-neutral-100 dark:bg-neutral-900 border border-dashed border-neutral-300 dark:border-neutral-700 flex items-center justify-center">
+                    <span class="text-[11px] uppercase tracking-widest text-neutral-400">Image coming soon</span>
                 </div>
-            </section>
+            </div>
 
-            <!-- 01.2 Objectives - Left Leaning -->
+            <!-- Row 2: SMART Goal (left) + Pre-Internship Analysis (right) — side by side -->
             <section class="col-span-12 lg:col-span-6 lg:col-start-1">
                 <h2
                     class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
@@ -119,8 +114,20 @@
                 </div>
             </section>
 
+            <section class="col-span-12 lg:col-span-6 lg:col-start-7">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    01.1 Reflection</h2>
+                <h3 class="text-3xl font-medium tracking-tight mb-4">Pre-Internship Analysis</h3>
+                <div
+                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                    <iframe
+                        src="https://docs.google.com/document/d/e/2PACX-1vQk1gmFdY3XK8OyyYvrFLC1nGhOdy4cNe_TtVoxgk4t08dj65xkNdSEb9W-bWc7lCnZ7T0GemIRZryY/pub?embedded=true"
+                        class="w-full h-[600px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                </div>
+            </section>
 
-            <!-- 01.4 Readiness - Left Leaning -->
+            <!-- Row 3: Employability (left) + Personality (right) — already paired -->
             <section class="col-span-12 lg:col-span-6 lg:col-start-1">
                 <h2
                     class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
@@ -134,7 +141,6 @@
                 </div>
             </section>
 
-            <!-- 01.5 Aptitude - Right Leaning -->
             <section class="col-span-12 lg:col-span-6 lg:col-start-7">
                 <h2
                     class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
@@ -148,14 +154,14 @@
                 </div>
             </section>
 
-            <!-- 01.3 Professional Agreements - Right Leaning -->
-            <section class="col-span-12 lg:col-span-6 lg:col-start-7">
+            <!-- Row 4: Professional Agreements — full width, both docs side by side with no dead space -->
+            <section class="col-span-12">
                 <h2
                     class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     01.3 Compliance</h2>
                 <h3 class="text-3xl font-medium tracking-tight mb-4">Professional Agreements</h3>
                 <p class="text-[11px] uppercase tracking-widest text-neutral-400 mb-6 italic">Click to expand</p>
-                <div class="grid grid-cols-2 gap-4">
+                <div class="grid grid-cols-2 gap-8">
                     <!-- Ethics Policy -->
                     <div class="group cursor-zoom-in relative aspect-[3/4] border border-neutral-200 dark:border-neutral-800 hover:border-black dark:hover:border-white transition-all overflow-hidden bg-white dark:bg-black"
                         data-lightbox-src="images/ethics-policy.jpg">
