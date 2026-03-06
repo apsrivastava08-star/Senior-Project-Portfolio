@@ -56,7 +56,8 @@
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-300">
-    <nav class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase transition-all duration-300">
+    <nav
+        class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase transition-all duration-300">
         <div class="col-span-3 font-bold">
             Akaash Srivastava
         </div>
@@ -79,8 +80,9 @@
         </div>
     </nav>
     <main class="pt-48 px-8 min-h-screen">
-        <div class="grid grid-cols-12 gap-8 mb-32">
-            <div class="col-span-12 lg:col-span-5">
+        <div class="grid grid-cols-12 gap-y-32 gap-x-8 mb-32">
+            <!-- Row 1: Header (Left) and September Journals (Right) -->
+            <div class="col-span-12 lg:col-span-5 lg:col-start-1">
                 <h1
                     class="text-6xl lg:text-7xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
                     Evidence<br />Of<br />Learning
@@ -88,92 +90,144 @@
                 <p class="text-neutral-500 uppercase text-[13px] tracking-widest mb-12">TIME DOCUMENTED & WORK RECORDED
                 </p>
             </div>
-            <div class="col-span-12 lg:col-span-6 lg:col-start-7 pt-4 lg:pt-2">
-                <div class="space-y-24">
-                    <section>
-                        <h2
-                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
-                            06.1 Accountability</h2>
-                        <h3 class="text-3xl font-medium tracking-tight mb-4">Logs & Verification</h3>
-                        <div class="grid grid-cols-1 gap-4">
-                            <div
-                                class="flex justify-between items-center py-6 border-b border-neutral-200 dark:border-neutral-800">
-                                <span class="uppercase text-[12px] tracking-tight">Signed Time Log</span>
-                                <span
-                                    class="text-neutral-400 text-[10px] uppercase font-mono tracking-tighter">[Document
-                                    Placeholder]</span>
-                            </div>
-                            <div
-                                class="flex justify-between items-center py-6 border-b border-neutral-200 dark:border-neutral-800">
-                                <span class="uppercase text-[12px] tracking-tight">Shift Learning Logs</span>
-                                <span
-                                    class="text-neutral-400 text-[10px] uppercase font-mono tracking-tighter">[Chronological
-                                    entries Placeholder]</span>
-                            </div>
-                        </div>
-                    </section>
 
-                    <section>
-                        <h2
-                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
-                            06.2 Technical Output</h2>
-                        <h3 class="text-3xl font-medium tracking-tight mb-4">Laboratory Worksheets</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <div
-                                class="p-6 border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between h-40">
-                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">WKS 01</span>
-                                <p class="text-sm font-medium">QC Testing Template</p>
-                                <span class="text-[9px] opacity-40 uppercase">VERIFIED</span>
-                            </div>
-                            <div
-                                class="p-6 border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between h-40">
-                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">WKS 02</span>
-                                <p class="text-sm font-medium">Chromatography Output</p>
-                                <span class="text-[9px] opacity-40 uppercase">VERIFIED</span>
-                            </div>
-                            <div
-                                class="p-6 border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between h-40">
-                                <span class="text-[10px] text-neutral-400 uppercase tracking-widest">WKS 03</span>
-                                <p class="text-sm font-medium">Lab Work Samples</p>
-                                <span class="text-[9px] opacity-40 uppercase">VERIFIED</span>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h2
-                            class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
-                            06.3 Visuals</h2>
-                        <h3 class="text-3xl font-medium tracking-tight mb-4">Photographic Archive</h3>
-                        <div class="grid grid-cols-2 gap-2">
-                            <div
-                                class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
-                                <span
-                                    class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Equipment
-                                    Used Placeholder</span>
-                            </div>
-                            <div
-                                class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
-                                <span
-                                    class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Chromatography
-                                    Machine Placeholder</span>
-                            </div>
-                            <div
-                                class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
-                                <span
-                                    class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Testing
-                                    Area Placeholder</span>
-                            </div>
-                            <div
-                                class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
-                                <span
-                                    class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Lab
-                                    Instruments Placeholder</span>
-                            </div>
-                        </div>
-                    </section>
+            <!-- 06.1 September Journals - Right -->
+            <section class="col-span-12 lg:col-span-6 lg:col-start-7">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    06.1 Learning Journals</h2>
+                <h3 class="text-3xl font-medium tracking-tight mb-4">September Journals</h3>
+                <div
+                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                    <iframe
+                        src="https://docs.google.com/document/d/e/2PACX-1vRrG255HANKaaMiGrBfM38O6rtB61gWvjQRfuBuETqxzDobMc1nd1-wBP4kYkaRL1DFEihZVpPEjrT2/pub?embedded=true"
+                        class="w-full h-[600px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
                 </div>
-            </div>
+            </section>
+
+            <!-- 06.2 October Journals - Left Leaning -->
+            <section class="col-span-12 lg:col-span-6 lg:col-start-1">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    06.2 Learning Journals</h2>
+                <h3 class="text-3xl font-medium tracking-tight mb-4">October Journals</h3>
+                <div
+                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                    <iframe
+                        src="https://docs.google.com/document/d/e/2PACX-1vRXz1hTrFnDJ71fsIrsXr9Ea82c9sLarGlGwzZBAzTOwjuNYimf6sp3W0xFgPXvb0Zf786QqraU76q1/pub?embedded=true"
+                        class="w-full h-[600px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                </div>
+            </section>
+
+            <!-- 06.3 November Journals - Right Leaning -->
+            <section class="col-span-12 lg:col-span-6 lg:col-start-7">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    06.3 Learning Journals</h2>
+                <h3 class="text-3xl font-medium tracking-tight mb-4">November Journals</h3>
+                <div
+                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                    <iframe
+                        src="https://docs.google.com/document/d/e/2PACX-1vSvo-zD42XCXlDHxLa8aIUrnoDzqZjf8tTJ83y0-9sYQk-XcWEoi-WG_6CKAhL_hdQhOxCIi6s9J62P/pub?embedded=true"
+                        class="w-full h-[600px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                </div>
+            </section>
+
+            <!-- 06.4 December/January Journals - Left Leaning -->
+            <section class="col-span-12 lg:col-span-6 lg:col-start-1">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    06.4 Learning Journals</h2>
+                <h3 class="text-3xl font-medium tracking-tight mb-4">December / January Journals</h3>
+                <div
+                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                    <iframe
+                        src="https://docs.google.com/document/d/e/2PACX-1vQAuhrzkElydttgSEM5OHlktfATyiyHso6FIqVN9qFsmO8Sb9hG9L8dQC91W4-AZMRGrFnmdDGj7BVZ/pub?embedded=true"
+                        class="w-full h-[600px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                </div>
+            </section>
+
+            <!-- Row 4: 06.5 Signed Time Log (Right) -->
+            <section class="col-span-12 lg:col-span-6 lg:col-start-7">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    06.5 Accountability</h2>
+                <h3 class="text-3xl font-medium tracking-tight mb-4">Signed Time Log</h3>
+                <div class="space-y-4">
+                    <div
+                        class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden aspect-[1/1.414]">
+                        <img src="images/time-log-1.jpg" alt="Internship Time Log 1"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 cursor-zoom-in">
+                    </div>
+                    <div
+                        class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden aspect-[1/1.414]">
+                        <img src="images/time-log-2.jpg" alt="Internship Time Log 2"
+                            class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 cursor-zoom-in">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Row 5: 06.6 Laboratory Worksheets (Left) -->
+            <section class="col-span-12 lg:col-span-6 lg:col-start-1">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    06.6 Technical Output</h2>
+                <h3 class="text-3xl font-medium tracking-tight mb-4">Laboratory Worksheets</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div
+                        class="p-6 border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between h-40">
+                        <span class="text-[10px] text-neutral-400 uppercase tracking-widest">WKS 01</span>
+                        <p class="text-sm font-medium">QC Testing Template</p>
+                        <span class="text-[9px] opacity-40 uppercase">VERIFIED</span>
+                    </div>
+                    <div
+                        class="p-6 border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between h-40">
+                        <span class="text-[10px] text-neutral-400 uppercase tracking-widest">WKS 02</span>
+                        <p class="text-sm font-medium">Chromatography Output</p>
+                        <span class="text-[9px] opacity-40 uppercase">VERIFIED</span>
+                    </div>
+                    <div
+                        class="p-6 border border-neutral-200 dark:border-neutral-800 flex flex-col justify-between h-40">
+                        <span class="text-[10px] text-neutral-400 uppercase tracking-widest">WKS 03</span>
+                        <p class="text-sm font-medium">Lab Work Samples</p>
+                        <span class="text-[9px] opacity-40 uppercase">VERIFIED</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Row 6: 06.7 Photographic Archive (Right) -->
+            <section class="col-span-12 lg:col-span-6 lg:col-start-7">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    06.7 Visuals</h2>
+                <h3 class="text-3xl font-medium tracking-tight mb-4">Photographic Archive</h3>
+                <div class="grid grid-cols-2 gap-2">
+                    <div
+                        class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
+                        <span
+                            class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Equipment
+                            Used Placeholder</span>
+                    </div>
+                    <div
+                        class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
+                        <span
+                            class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Chromatography
+                            Machine Placeholder</span>
+                    </div>
+                    <div
+                        class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
+                        <span
+                            class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Testing
+                            Area Placeholder</span>
+                    </div>
+                    <div
+                        class="aspect-square bg-neutral-200 dark:bg-neutral-800 flex items-center justify-center border border-neutral-200 dark:border-neutral-800 group overflow-hidden relative">
+                        <span
+                            class="text-neutral-400 font-mono text-[9px] uppercase tracking-widest px-4 text-center">Lab
+                            Instruments Placeholder</span>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <footer class="py-12 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
@@ -192,6 +246,7 @@
         </footer>
     </main>
 
-<script src="script.js"></script></body>
+    <script src="script.js"></script>
+</body>
 
 </html>
