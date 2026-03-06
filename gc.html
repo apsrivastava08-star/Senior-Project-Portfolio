@@ -56,7 +56,8 @@
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-black dark:text-white transition-colors duration-300">
-    <nav class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase transition-all duration-300">
+    <nav
+        class="fixed top-0 w-full z-50 px-8 py-8 grid grid-cols-12 items-center text-[16px] tracking-tight uppercase transition-all duration-300">
         <div class="col-span-3 font-bold">
             Akaash Srivastava
         </div>
@@ -103,8 +104,16 @@
                             class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                             Instrument Overview</h2>
                         <div class="p-8 border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-black/50">
-                            <p class="text-xl leading-relaxed font-light">[Provide a technical explanation of the GC
-                                instrument and how it works here.]</p>
+                            <p class="text-xl leading-relaxed font-light">Gas chromatography works by vaporizing a
+                                liquid sample at a high temperature, around 250&deg;C, or whatever temperature is needed
+                                to vaporize the specific sample. Each component then runs through a column, which works
+                                like an obstacle course. Components that move through quickly do not have a strong
+                                affinity for the coating inside the column, so they reach the detector fast. Components
+                                that interact heavily with the column coating take longer, which is why GC methods start
+                                at a low temperature like 40&deg;C and gradually climb to 200&deg;C or higher as the run
+                                progresses, forcing slower components through. The detector uses a flame, and components
+                                that are highly reactive produce a larger signal. One important limitation is that water
+                                cannot be detected using flame ionization detection, since water is not flammable.</p>
                         </div>
                     </section>
 
@@ -113,10 +122,11 @@
                         <h2
                             class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                             Internship Application</h2>
-                        <div class="p-8 border-l border-black dark:border-white bg-neutral-100 dark:bg-white/5">
-                            <p class="text-xl leading-relaxed italic">[Describe how you specifically used GC during your
-                                internship and what results you achieved.]</p>
-                        </div>
+                        <p class="text-xl leading-relaxed italic">During my internship, I ran the GC from start to
+                            finish on my own multiple times. I ran experiments adjusting conditions and comparing
+                            results across different samples. Running the GC gave me a strong understanding of
+                            heat-based separation and how to interpret what the machine was telling me through its
+                            output.</p>
                     </section>
 
                     <!-- Images Section -->
@@ -174,6 +184,7 @@
         </footer>
     </main>
 
-<script src="script.js"></script></body>
+    <script src="script.js"></script>
+</body>
 
 </html>
