@@ -79,87 +79,129 @@
         </div>
     </nav>
     <main class="pt-36 px-8 min-h-screen">
-        <div class="grid grid-cols-12 gap-y-20 gap-x-8 mb-20">
-            <!-- Row 1: Portrait left + Biography right -->
+        <div class="grid grid-cols-12 gap-y-20 gap-x-8 mb-20 items-start">
+
+            <!-- Title row: spans full left, nothing on right -->
             <div class="col-span-12 lg:col-span-5 lg:col-start-1">
-                <h1 class="text-5xl lg:text-6xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
+                <h1
+                    class="text-5xl lg:text-6xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
                     Entering<br />The<br />Laboratory
                 </h1>
-                <p class="text-neutral-500 uppercase text-[13px] tracking-widest mb-10">STARTING OUT &amp; STEPPING INTO THE LAB</p>
-                <section class="mt-4">
-                    <h2 class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">02.1 Mentorship</h2>
-                    <h3 class="text-2xl font-medium tracking-tight mb-6">Mentor Portrait</h3>
-                    <div class="aspect-[3/4] bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 overflow-hidden mb-6">
-                        <img src="mentor-portrait.jpg" alt="Akaash Srivastava &amp; Nathan Pando" class="w-full h-full object-cover border border-neutral-200 dark:border-neutral-800">
-                    </div>
-                    <p class="text-[10px] text-neutral-400 uppercase tracking-widest mb-6 text-center">Akaash Srivastava &amp; Nathan Pando</p>
-                    <div class="pt-2">
-                        <p class="text-base leading-relaxed italic opacity-70">
-                            What I do is solve problems and learn whatever I need to learn — and as long as you can do those two things, you'll be able to do anything in any field you really want to.
-                        </p>
-                        <p class="text-[10px] text-neutral-400 uppercase tracking-widest mt-4">— Nathan Pando, Mentor</p>
-                    </div>
-                </section>
+                <p class="text-neutral-500 uppercase text-[13px] tracking-widest">STARTING OUT &amp; STEPPING INTO THE
+                    LAB</p>
             </div>
 
-            <section class="col-span-12 lg:col-span-6 lg:col-start-7 pt-4 lg:pt-2">
-                <h2 class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">02.3 Biography</h2>
+            <!-- Quote: right side of title row -->
+            <div class="col-span-12 lg:col-span-6 lg:col-start-7 flex flex-col justify-end gap-10">
+                <div class="border-l border-black dark:border-white pl-8">
+                    <p class="text-lg leading-relaxed italic opacity-70 mb-4">
+                        "What I do is solve problems and learn whatever I need to learn — and as long as you can do
+                        those two things, you'll be able to do anything in any field you really want to."
+                    </p>
+                    <p class="text-[10px] text-neutral-400 uppercase tracking-widest">— Nathan Pando, Mentor</p>
+                </div>
+                <div class="pt-6 border-t border-neutral-200 dark:border-neutral-800">
+                    <p class="text-base leading-[1.8] text-neutral-400 dark:text-neutral-500">
+                        This section documents my first steps inside the lab and the beginning of my working
+                        relationship with my mentor, Nathan Pando. It includes my mentor biography, interview
+                        transcript, and the conference sheet and reflection from my first month. September was about
+                        finding my footing, learning how the lab operated, what was expected of me, and how to start
+                        applying what I knew in a real environment. The quote above from Nathan captures something I
+                        came to understand firsthand over the course of this internship, and it starts here.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Portrait (left) + Biography (right) — aligned in same row -->
+            <section class="col-span-12 lg:col-span-5 lg:col-start-1 pt-16">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    02.1 Mentorship</h2>
+                <h3 class="text-2xl font-medium tracking-tight mb-6">Mentor Portrait</h3>
+                <div
+                    class="aspect-[3/4] bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 overflow-hidden mb-6">
+                    <img src="mentor-portrait.jpg" alt="Akaash Srivastava &amp; Nathan Pando"
+                        class="w-full h-full object-cover border border-neutral-200 dark:border-neutral-800">
+                </div>
+                <p class="text-[10px] text-neutral-400 uppercase tracking-widest mb-6 text-center">Akaash Srivastava
+                    &amp; Nathan Pando</p>
+
+            </section>
+
+            <section class="col-span-12 lg:col-span-6 lg:col-start-7 pt-16">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    02.3 Biography</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-6">Mentor Biography</h3>
-                <div class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                <div
+                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
                     <div class="flex items-center justify-center bg-neutral-50/30 dark:bg-black/20 group">
-                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTRNulGHeTG454MK-3JhI0PQgKQasYmmcBxapHCBzrWWCIxdkQUWM1_mM5RmhhfaSIjVHkDrxHWkeZl/pub?embedded=true"
-                            class="w-full h-[480px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                        <iframe
+                            src="https://docs.google.com/document/d/e/2PACX-1vTRNulGHeTG454MK-3JhI0PQgKQasYmmcBxapHCBzrWWCIxdkQUWM1_mM5RmhhfaSIjVHkDrxHWkeZl/pub?embedded=true"
+                            class="w-full h-[760px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
                     </div>
                 </div>
             </section>
 
-            <!-- Row 2: Transcript left + Conference Sheet right -->
+            <!-- Row 2: Conference Sheet left + Monthly Reflection right -->
             <section class="col-span-12 lg:col-span-6 lg:col-start-1">
-                <h2 class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">02.4 Transcript</h2>
-                <h3 class="text-2xl font-medium tracking-tight mb-6">Mentor Interview Transcript</h3>
-                <div class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
-                    <div class="flex items-center justify-center bg-neutral-50/30 dark:bg-black/20 group">
-                        <iframe src="https://docs.google.com/document/d/e/2PACX-1vTxPX8jSdDzq24Skj7QIZgOLJ721ZeiWpVlHafw0jYy_6l_pB7oPpZHxqavcEhzVBDiw8q8paGaWsqO/pub?embedded=true"
-                            class="w-full h-[480px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
-                    </div>
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    02.5 September Review</h2>
+                <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Sheet</h3>
+                <div
+                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                    <iframe
+                        src="https://docs.google.com/document/d/e/2PACX-1vQpw1iA2oGmr8SXWAD5iblLmB4vniToMwb2rnXXgAX7zlBqr43V5bIgh_aZNAYnoY_OjZsYBJwRCaPw/pub?embedded=true"
+                        class="w-full h-[480px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
                 </div>
             </section>
 
             <section class="col-span-12 lg:col-span-6 lg:col-start-7">
-                <h2 class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">02.5 September Review</h2>
-                <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Sheet</h3>
-                <div class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
-                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vQpw1iA2oGmr8SXWAD5iblLmB4vniToMwb2rnXXgAX7zlBqr43V5bIgh_aZNAYnoY_OjZsYBJwRCaPw/pub?embedded=true"
-                        class="w-full h-[480px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
-                </div>
-            </section>
-
-            <!-- Row 3: Monthly Reflection left -->
-            <section class="col-span-12 lg:col-span-6 lg:col-start-1">
-                <h2 class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">02.6 September Review</h2>
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    02.6 September Review</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Monthly Reflection</h3>
-                <div class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
-                    <iframe src="https://docs.google.com/document/d/e/2PACX-1vReGvpFoerkr0iCqf07PbV_35hHiM7pwasEn0FQZJJ5qfP6fEZkNWzjq9FG16_23_TAFmywxLoxI2Jr/pub?embedded=true"
+                <div
+                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                    <iframe
+                        src="https://docs.google.com/document/d/e/2PACX-1vReGvpFoerkr0iCqf07PbV_35hHiM7pwasEn0FQZJJ5qfP6fEZkNWzjq9FG16_23_TAFmywxLoxI2Jr/pub?embedded=true"
                         class="w-full h-[480px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
                 </div>
             </section>
-        </div>
-    </main>
 
-    <footer class="py-12 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
-        <div class="col-span-12 lg:col-span-4">
+            <!-- Row 3: Transcript left -->
+            <section class="col-span-12 lg:col-span-6 lg:col-start-1">
+                <h2
+                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-6 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    02.4 Transcript</h2>
+                <h3 class="text-2xl font-medium tracking-tight mb-6">Mentor Interview Transcript</h3>
+                <div
+                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                    <div class="flex items-center justify-center bg-neutral-50/30 dark:bg-black/20 group">
+                        <iframe
+                            src="https://docs.google.com/document/d/e/2PACX-1vTxPX8jSdDzq24Skj7QIZgOLJ721ZeiWpVlHafw0jYy_6l_pB7oPpZHxqavcEhzVBDiw8q8paGaWsqO/pub?embedded=true"
+                            class="w-full h-[480px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                    </div>
+                </div>
+            </section>
+
         </div>
-        <div class="col-span-12 lg:col-span-4 text-[13px] uppercase text-center">
-            <p class="mb-4">Akaash Srivastava | Jain Chem Ltd. | Nathan Pando</p>
-        </div>
-        <div class="col-span-12 lg:col-span-4 text-right">
-            <button
-                class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
-                onclick="window.toggleDarkMode()">
-                Toggle Mode
-            </button>
-        </div>
-    </footer>
+
+        <footer class="py-12 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
+            <div class="col-span-12 lg:col-span-4">
+            </div>
+            <div class="col-span-12 lg:col-span-4 text-[13px] uppercase text-center">
+                <p class="mb-4">Akaash Srivastava | Jain Chem Ltd. | Nathan Pando</p>
+            </div>
+            <div class="col-span-12 lg:col-span-4 text-right">
+                <button
+                    class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
+                    onclick="window.toggleDarkMode()">
+                    Toggle Mode
+                </button>
+            </div>
+        </footer>
     </main>
 
     <script src="script.js"></script>
