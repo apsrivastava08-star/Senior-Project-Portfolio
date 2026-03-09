@@ -97,11 +97,14 @@
                 </div>
             </div>
 
-            <!-- Right: image placeholder -->
+            <!-- Right: Development Image -->
             <div class="col-span-12 lg:col-span-6 lg:col-start-7 flex items-start">
-                <div
-                    class="w-full aspect-video bg-neutral-100 dark:bg-neutral-900 border border-dashed border-neutral-300 dark:border-neutral-700 flex items-center justify-center">
-                    <span class="text-[11px] uppercase tracking-widest text-neutral-400">Image coming soon</span>
+                <div class="w-full aspect-video bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 overflow-hidden group relative cursor-zoom-in"
+                    data-lightbox-src="images/began.jpg">
+                    <img src="images/began.jpg" alt="Working in the Lab"
+                        class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700 scale-105 group-hover:scale-100">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-700">
+                    </div>
                 </div>
             </div>
 
@@ -188,6 +191,18 @@
 
         </div>
 
+        <!-- Lightbox Modal -->
+        <div id="lightbox"
+            class="fixed inset-0 z-[100] bg-black/90 backdrop-blur-md items-center justify-center hidden cursor-zoom-out p-8"
+            onclick="closeLightbox()">
+            <div class="relative max-h-full max-w-5xl bg-white dark:bg-neutral-900 shadow-[0_0_50px_rgba(0,0,0,0.5)] transition-all duration-500 transform scale-95 opacity-0"
+                id="lightbox-container">
+                <img id="lightbox-img" src="" class="max-h-[85vh] w-auto object-contain block" alt="Expanded Document">
+                <div
+                    class="absolute bottom-[-40px] left-0 right-0 text-center text-white/50 text-[10px] uppercase tracking-widest">
+                    Click anywhere to close</div>
+            </div>
+        </div>
 
         <footer class="py-12 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
             <div class="col-span-12 lg:col-span-4">
