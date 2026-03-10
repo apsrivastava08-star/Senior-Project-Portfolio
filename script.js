@@ -25,10 +25,6 @@ window.addEventListener('DOMContentLoaded', () => {
         if (trigger) {
             openLightbox(trigger.getAttribute('data-lightbox-src'));
         }
-
-        if (e.target.closest('#lightbox') || e.target.closest('#lightbox-container')) {
-            // Already handled by onclick="closeLightbox()" in HTML
-        }
     });
 });
 
@@ -62,6 +58,25 @@ window.closeLightbox = function () {
     }
 };
 
+// Document Preview Interactivity
+window.enableInteraction = function (container) {
+    // 1. Reset all other documents back to preview state
+    document.querySelectorAll('.doc-overlay').forEach(overlay => {
+        const otherContainer = overlay.parentElement;
+        if (otherContainer !== container) {
+            const iframe = otherContainer.querySelector('iframe');
+            if (iframe) {
+                iframe.classList.add('pointer-events-none');
+            }
+            overlay.classList.remove('hidden');
+        }
+    });
 
-
-
+    // 2. Enable interaction for the clicked document
+    const iframe = container.querySelector('iframe');
+    const overlay = container.querySelector('.doc-overlay');
+    if (iframe && overlay) {
+        iframe.classList.remove('pointer-events-none');
+        overlay.classList.add('hidden');
+    }
+};

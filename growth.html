@@ -99,11 +99,23 @@
                     class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.1</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Sheet</h3>
-                <div
-                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                <div class="relative group border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden"
+                    onclick="enableInteraction(this)">
                     <iframe
                         src="https://docs.google.com/document/d/e/2PACX-1vRvWN4kCkRRp3bZlNaSb6c9vtdcKTQQxR8iakKjFdrDyqnoK4R4eaCSwb5gr3x2sBp3NM9c_vAO3KbN/pub?embedded=true"
-                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700 pointer-events-none"></iframe>
+                    <div
+                        class="doc-overlay absolute inset-0 bg-transparent cursor-pointer flex items-center justify-center group-hover:bg-black/5 transition-colors">
+                        <div
+                            class="bg-black/80 text-white text-[10px] uppercase tracking-[0.2em] px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            Click to Interact
+                        </div>
+                    </div>
+                    <button
+                        onclick="event.stopPropagation(); window.open('https://docs.google.com/document/d/e/2PACX-1vRvWN4kCkRRp3bZlNaSb6c9vtdcKTQQxR8iakKjFdrDyqnoK4R4eaCSwb5gr3x2sBp3NM9c_vAO3KbN/pub', '_blank')"
+                        class="absolute bottom-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-4 py-2 text-[10px] uppercase tracking-widest transition-all z-10">
+                        View Document
+                    </button>
                 </div>
             </section>
 
@@ -112,11 +124,23 @@
                     class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.2</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Reflection</h3>
-                <div
-                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                <div class="relative group border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden"
+                    onclick="enableInteraction(this)">
                     <iframe
                         src="https://docs.google.com/document/d/e/2PACX-1vTMjZgLz1QX_hi3mivVtIRTzRVZ82MffeA6ivGMiLc3Aa61VxEYwYbdry7aW5L-XFKmJVGr4snM7nLK/pub?embedded=true"
-                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700 pointer-events-none"></iframe>
+                    <div
+                        class="doc-overlay absolute inset-0 bg-transparent cursor-pointer flex items-center justify-center group-hover:bg-black/5 transition-colors">
+                        <div
+                            class="bg-black/80 text-white text-[10px] uppercase tracking-[0.2em] px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            Click to Interact
+                        </div>
+                    </div>
+                    <button
+                        onclick="event.stopPropagation(); window.open('https://docs.google.com/document/d/e/2PACX-1vTMjZgLz1QX_hi3mivVtIRTzRVZ82MffeA6ivGMiLc3Aa61VxEYwYbdry7aW5L-XFKmJVGr4snM7nLK/pub', '_blank')"
+                        class="absolute bottom-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-4 py-2 text-[10px] uppercase tracking-widest transition-all z-10">
+                        View Document
+                    </button>
                 </div>
             </section>
 
@@ -126,11 +150,23 @@
                     class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.3</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Sheet</h3>
-                <div
-                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                <div class="relative group border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden"
+                    onclick="enableInteraction(this)">
                     <iframe
                         src="https://docs.google.com/document/d/e/2PACX-1vSnM2SyIhnb8vrbgHxHsgpKwMT0DHSs0dA9EWLlim8BTGs_Jokh8lIH0BH1J9ZrjIpDdpw5RBW6wC5P/pub?embedded=true"
-                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700 pointer-events-none"></iframe>
+                    <div
+                        class="doc-overlay absolute inset-0 bg-transparent cursor-pointer flex items-center justify-center group-hover:bg-black/5 transition-colors">
+                        <div
+                            class="bg-black/80 text-white text-[10px] uppercase tracking-[0.2em] px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            Click to Interact
+                        </div>
+                    </div>
+                    <button
+                        onclick="event.stopPropagation(); window.open('https://docs.google.com/document/d/e/2PACX-1vSnM2SyIhnb8vrbgHxHsgpKwMT0DHSs0dA9EWLlim8BTGs_Jokh8lIH0BH1J9ZrjIpDdpw5RBW6wC5P/pub', '_blank')"
+                        class="absolute bottom-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-4 py-2 text-[10px] uppercase tracking-widest transition-all z-10">
+                        View Document
+                    </button>
                 </div>
             </section>
 
@@ -139,11 +175,23 @@
                     class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.4</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Reflection</h3>
-                <div
-                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                <div class="relative group border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden"
+                    onclick="enableInteraction(this)">
                     <iframe
                         src="https://docs.google.com/document/d/e/2PACX-1vQ6qwprvEy7H3YwhcwOlyfK9BZQzL3DXh_5Zhzt9KtHXGTkRtsqhwe6FQ9wYXTzexjtRtXAI7oI4QMc/pub?embedded=true"
-                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700 pointer-events-none"></iframe>
+                    <div
+                        class="doc-overlay absolute inset-0 bg-transparent cursor-pointer flex items-center justify-center group-hover:bg-black/5 transition-colors">
+                        <div
+                            class="bg-black/80 text-white text-[10px] uppercase tracking-[0.2em] px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            Click to Interact
+                        </div>
+                    </div>
+                    <button
+                        onclick="event.stopPropagation(); window.open('https://docs.google.com/document/d/e/2PACX-1vQ6qwprvEy7H3YwhcwOlyfK9BZQzL3DXh_5Zhzt9KtHXGTkRtsqhwe6FQ9wYXTzexjtRtXAI7oI4QMc/pub', '_blank')"
+                        class="absolute bottom-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-4 py-2 text-[10px] uppercase tracking-widest transition-all z-10">
+                        View Document
+                    </button>
                 </div>
             </section>
 
@@ -153,11 +201,23 @@
                     class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.5</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Sheet</h3>
-                <div
-                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                <div class="relative group border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden"
+                    onclick="enableInteraction(this)">
                     <iframe
                         src="https://docs.google.com/document/d/e/2PACX-1vRSM15L61SWynoFLw-PS3nQ7yGIma_8fItXGhaymO6LLZz8v3SaCx4yASgzwGr-Rd1vIXwuY0eZEM1F/pub?embedded=true"
-                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700 pointer-events-none"></iframe>
+                    <div
+                        class="doc-overlay absolute inset-0 bg-transparent cursor-pointer flex items-center justify-center group-hover:bg-black/5 transition-colors">
+                        <div
+                            class="bg-black/80 text-white text-[10px] uppercase tracking-[0.2em] px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            Click to Interact
+                        </div>
+                    </div>
+                    <button
+                        onclick="event.stopPropagation(); window.open('https://docs.google.com/document/d/e/2PACX-1vRSM15L61SWynoFLw-PS3nQ7yGIma_8fItXGhaymO6LLZz8v3SaCx4yASgzwGr-Rd1vIXwuY0eZEM1F/pub', '_blank')"
+                        class="absolute bottom-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-4 py-2 text-[10px] uppercase tracking-widest transition-all z-10">
+                        View Document
+                    </button>
                 </div>
             </section>
 
@@ -166,11 +226,23 @@
                     class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.6</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Reflection</h3>
-                <div
-                    class="border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden">
+                <div class="relative group border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-black/50 overflow-hidden"
+                    onclick="enableInteraction(this)">
                     <iframe
                         src="https://docs.google.com/document/d/e/2PACX-1vQWJ5A7dgOJns9t5sBeDn7Jcw4g8h5h13dZM2VZAg66MuALMMW2X5ukCTyNjH8AnSUpjy9YufQsoerO/pub?embedded=true"
-                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700"></iframe>
+                        class="w-full h-[800px] border-none grayscale hover:grayscale-0 transition-all duration-700 pointer-events-none"></iframe>
+                    <div
+                        class="doc-overlay absolute inset-0 bg-transparent cursor-pointer flex items-center justify-center group-hover:bg-black/5 transition-colors">
+                        <div
+                            class="bg-black/80 text-white text-[10px] uppercase tracking-[0.2em] px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                            Click to Interact
+                        </div>
+                    </div>
+                    <button
+                        onclick="event.stopPropagation(); window.open('https://docs.google.com/document/d/e/2PACX-1vQWJ5A7dgOJns9t5sBeDn7Jcw4g8h5h13dZM2VZAg66MuALMMW2X5ukCTyNjH8AnSUpjy9YufQsoerO/pub', '_blank')"
+                        class="absolute bottom-4 right-4 bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-4 py-2 text-[10px] uppercase tracking-widest transition-all z-10">
+                        View Document
+                    </button>
                 </div>
             </section>
 
