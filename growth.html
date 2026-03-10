@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth dark" lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -10,22 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-    <script>
-        (function () {
-            const THEME_KEY = 'akaash-portfolio-theme';
-            const savedTheme = localStorage.getItem(THEME_KEY);
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'light') {
-                document.documentElement.classList.remove('dark');
-            } else {
-                document.documentElement.classList.add('dark');
-            }
-            window.toggleDarkMode = function () {
-                const isDark = document.documentElement.classList.toggle('dark');
-                localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light');
-            };
-        })();
-    </script>
+
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -61,11 +46,11 @@
         <div class="font-bold shrink-0">
             Akaash Srivastava
         </div>
-        <div class="flex items-center gap-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
+        <div class="flex items-center gap-6 text-neutral-500 font-bold whitespace-nowrap">
             <a class="hover:text-black dark:hover:text-white transition-colors" href="index.html">Home</a>
             <a class="hover:text-black dark:hover:text-white transition-colors" href="beginning.html">Foundation</a>
             <a class="hover:text-black dark:hover:text-white transition-colors" href="entering-lab.html">Learning</a>
-            <a class="text-black dark:text-white hover:opacity-70 transition-opacity" href="growth.html">Development</a>
+            <a class="text-white hover:opacity-70 transition-opacity" href="growth.html">Development</a>
             <a class="hover:text-black dark:hover:text-white transition-colors"
                 href="contribution.html">Contribution</a>
             <a class="hover:text-black dark:hover:text-white transition-colors" href="research.html">Research</a>
@@ -74,7 +59,7 @@
                 href="final-reflection.html">Reflection</a>
         </div>
         <div class="shrink-0 text-right">
-            <span class="text-neutral-400 text-[12px] tracking-widest">(03)</span>
+            <span class="text-white dark:text-white text-[12px] tracking-widest">(03)</span>
         </div>
     </nav>
     <main class="pt-36 px-8 min-h-screen">
@@ -89,7 +74,7 @@
                 <p class="text-neutral-500 uppercase text-[13px] tracking-widest">SETTLING IN &amp; WORKING
                     INDEPENDENTLY</p>
                 <div class="mt-12 pt-6 border-t border-neutral-200 dark:border-neutral-800">
-                    <p class="text-base leading-[1.8] text-neutral-400 dark:text-neutral-500">
+                    <p class="text-base leading-[1.8] text-neutral-600 dark:text-white">
                         This section covers October through January, documenting how my goals evolved and how my work
                         and thinking changed month by month. It contains my conference sheets and reflections from each
                         month.
@@ -111,7 +96,7 @@
             <!-- Row 2: Oct Conference Sheet (left) + Oct Reflection (right) -->
             <section class="col-span-12 lg:col-span-6 lg:col-start-1">
                 <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.1</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Sheet</h3>
                 <div
@@ -124,7 +109,7 @@
 
             <section class="col-span-12 lg:col-span-6 lg:col-start-7">
                 <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.2</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Reflection</h3>
                 <div
@@ -138,7 +123,7 @@
             <!-- Row 3: Nov/Dec Sheet (left) + Nov/Dec Reflection (right) -->
             <section class="col-span-12 lg:col-span-6 lg:col-start-1">
                 <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.3</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Sheet</h3>
                 <div
@@ -151,7 +136,7 @@
 
             <section class="col-span-12 lg:col-span-6 lg:col-start-7">
                 <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.4</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Reflection</h3>
                 <div
@@ -165,7 +150,7 @@
             <!-- Row 4: Jan Sheet (left) + Jan Reflection (right) -->
             <section class="col-span-12 lg:col-span-6 lg:col-start-1">
                 <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.5</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Sheet</h3>
                 <div
@@ -178,7 +163,7 @@
 
             <section class="col-span-12 lg:col-span-6 lg:col-start-7">
                 <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     03.6</h2>
                 <h3 class="text-2xl font-medium tracking-tight mb-4">Conference Reflection</h3>
                 <div
@@ -204,19 +189,24 @@
             </div>
         </div>
 
-        <footer class="py-12 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-24">
+
+
+        <footer class="py-12 grid grid-cols-12 gap-8 border-t border-neutral-200 dark:border-neutral-800 mt-8">
             <div class="col-span-12 lg:col-span-4">
             </div>
             <div class="col-span-12 lg:col-span-4 text-[13px] uppercase text-center">
                 <p class="mb-4">Akaash Srivastava | Jain Chem Ltd. | Nathan Pando, Mentor</p>
             </div>
             <div class="col-span-12 lg:col-span-4 text-right">
-                <button
-                    class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
-                    onclick="window.toggleDarkMode()">
-                    Toggle Mode
-                </button>
+                <a href="contribution.html"
+                    class="group flex items-center justify-end gap-2 text-[11px] uppercase tracking-widest font-medium transition-all hover:gap-4">
+                    <span>Next Section: Contribution</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
             </div>
+
         </footer>
     </main>
 

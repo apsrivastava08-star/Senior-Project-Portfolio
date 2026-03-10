@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="scroll-smooth" lang="en">
+<html class="scroll-smooth dark" lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -10,22 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;display=swap"
         rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-    <script>
-        (function () {
-            const THEME_KEY = 'akaash-portfolio-theme';
-            const savedTheme = localStorage.getItem(THEME_KEY);
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            if (savedTheme === 'light') {
-                document.documentElement.classList.remove('dark');
-            } else {
-                document.documentElement.classList.add('dark');
-            }
-            window.toggleDarkMode = function () {
-                const isDark = document.documentElement.classList.toggle('dark');
-                localStorage.setItem(THEME_KEY, isDark ? 'dark' : 'light');
-            };
-        })();
-    </script>
+
     <script>
         tailwind.config = {
             darkMode: "class",
@@ -61,7 +46,7 @@
         <div class="font-bold shrink-0">
             Akaash Srivastava
         </div>
-        <div class="flex items-center gap-6 text-neutral-400 dark:text-neutral-500 font-bold whitespace-nowrap">
+        <div class="flex items-center gap-6 text-neutral-500 font-bold whitespace-nowrap">
             <a class="hover:text-black dark:hover:text-white transition-colors" href="index.html">Home</a>
             <a class="hover:text-black dark:hover:text-white transition-colors" href="beginning.html">Foundation</a>
             <a class="hover:text-black dark:hover:text-white transition-colors" href="entering-lab.html">Learning</a>
@@ -74,7 +59,7 @@
                 href="final-reflection.html">Reflection</a>
         </div>
         <div class="shrink-0 text-right">
-            <span class="text-neutral-400 text-[12px] tracking-widest">(04)</span>
+            <span class="text-white dark:text-white text-[12px] tracking-widest">(04)</span>
         </div>
     </nav>
     <main class="pt-36 px-8 min-h-screen">
@@ -94,14 +79,14 @@
                     class="text-5xl lg:text-6xl font-medium tracking-tighter leading-[0.9] text-black dark:text-white uppercase mb-8">
                     Titrations
                 </h1>
-                <p class="text-neutral-500 uppercase text-[13px] tracking-widest italic">Quantitative Chemical
+                <p class="text-white dark:text-white uppercase text-[13px] tracking-widest italic">Quantitative Chemical
                     Analysis</p>
             </div>
 
             <!-- Row 1 Right: Process Overview -->
             <section class="col-span-12 lg:col-span-6 lg:col-start-7 pt-4 lg:pt-2">
                 <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     04.2.10</h2>
                 <div class="p-8 border border-neutral-200 dark:border-neutral-800 bg-white/50 dark:bg-black/50">
                     <p class="text-base leading-relaxed font-light">A titration works by using a titrant, a
@@ -119,7 +104,7 @@
             <!-- Row 2 Left: Internship Application -->
             <section class="col-span-12 lg:col-span-5">
                 <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     04.2.11</h2>
                 <div class="p-8 border-l border-black dark:border-white bg-neutral-100 dark:bg-white/5">
                     <p class="text-base leading-relaxed italic">Titrations were central to my work throughout the
@@ -136,7 +121,7 @@
             <!-- Row 2 Right: Visual Evidence -->
             <section class="col-span-12 lg:col-span-6 lg:col-start-7">
                 <h2
-                    class="text-[13px] uppercase tracking-widest text-neutral-400 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
+                    class="text-[13px] uppercase tracking-widest text-neutral-500 mb-8 border-b border-neutral-200 dark:border-neutral-800 pb-2">
                     04.2.12</h2>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="group">
@@ -163,12 +148,15 @@
                 <p class="mb-4">Akaash Srivastava | Jain Chem Ltd. | Nathan Pando, Mentor</p>
             </div>
             <div class="col-span-12 lg:col-span-4 text-right">
-                <button
-                    class="text-[11px] uppercase border border-black dark:border-white px-3 py-1 hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black transition-all"
-                    onclick="window.toggleDarkMode()">
-                    Toggle Mode
-                </button>
+                <a href="documentation.html"
+                    class="group flex items-center justify-end gap-2 text-[11px] uppercase tracking-widest font-medium transition-all hover:gap-4">
+                    <span>Back to Evidence</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                </a>
             </div>
+
         </footer>
     </main>
 
